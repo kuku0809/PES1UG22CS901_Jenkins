@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 build 'PES1UG22CS901-1'
-                sh 'g++ mahell.cpp -o output'
+                sh 'g++ main/hell.cpp -o output'
                 echo 'Build is complete'
             }
         }
